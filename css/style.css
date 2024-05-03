@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+main{
+margin: 30px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+div img{
+    width: 100%;
+}
+
+/* mediaqueris */
+/* dsipositivos md */
+/* tipos de medio: screen, print, speach, all */
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    /* agregar nuevos estilos o redefinir uno que ya tengamos */
+    div{
+        width: 48%;
+    }
+
+    section{
+        justify-content: space-between;
+    }
+}
+
+/* dispositivos lg */
+@media screen and (min-width: 992px){
+    div{
+        width: 24%;
+    }
+
+    section{
+        justify-content: space-around;
+    }
+
+}
+
